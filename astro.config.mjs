@@ -8,7 +8,7 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   // TODO: This needs to change once you deploy your site
-  site: "https://example.com",
+  site: "https://50things-nine.vercel.app",
   integrations: [
     mdx(),
     tailwind({
