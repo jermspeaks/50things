@@ -1,0 +1,36 @@
+---
+import { getEntry } from "astro:content";
+import HomePage from "../../layouts/HomePage.astro";
+import Article from "../../components/Article.astro";
+
+// get the current year
+const currentYear = new Date().getFullYear();
+const entry = await getEntry("copy", "about");
+const { title } = entry.data;
+const { Content } = await entry.render();
+---
+
+<HomePage
+  title="About Page"
+  description="About Page for the Astro Content Template"
+>
+  <div slot="header">
+    <div class="flex justify-between items-center">
+      <h1><a href="/">Website Header</a></h1>
+      <nav>
+        <div>About</div>
+      </nav>
+    </div>
+  </div>
+  <div slot="default">
+    <Article>
+      <h2 class="text-center">
+        {title}
+      </h2>
+      <Content />
+    </Article>
+  </div>
+  <div slot="footer">
+    <p>Copyright {currentYear}</p>
+  </div>
+</HomePage>

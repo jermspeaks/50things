@@ -1,0 +1,72 @@
+---
+export interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<article class:list={["article", className]}>
+  <slot />
+</article>
+
+<style>
+  .article {
+    @apply flex flex-col space-y-4 max-w-[80ch] mx-auto;
+  }
+
+  .article :global(p) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .article :global(ul),
+  .article :global(ol) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .article :global(li) {
+    @apply list-disc;
+  }
+
+  .article :global(h1) {
+    margin-bottom: 1rem;
+    @apply text-3xl;
+  }
+
+  .article :global(h2) {
+    margin-bottom: 1rem;
+    @apply text-2xl;
+  }
+
+  .article :global(h3) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    @apply text-xl;
+  }
+
+  .article :global(h4) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    @apply text-lg;
+  }
+
+  .article :global(h5) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    @apply text-base;
+  }
+  .article :global(h6) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    @apply text-sm;
+  }
+  .article :global(a) {
+    @apply text-blue-700 underline dark:text-blue-200 visited:text-purple-700 dark:visited:text-purple-200;
+  }
+  .article :global(.astro-code) {
+    @apply p-4;
+  }
+</style>

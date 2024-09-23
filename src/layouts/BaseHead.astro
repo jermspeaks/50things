@@ -1,0 +1,80 @@
+---
+import "@/styles/globals.css";
+
+// More about the robots meta tag
+// @ref https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag
+export interface Props {
+  author?: string;
+  description: string;
+  image?: string;
+  imageAlt?: string;
+  publishedDate?: string;
+  srcImage?: string; // Reserved for image:assets by using image.src
+  title: string;
+  twitterHandle?: string;
+}
+
+const defaultDate = new Date().toISOString();
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const {
+  author = "Jeremy Wong",
+  description = "A starter template for creating a blog with Astro.",
+  image = "/meta-social.png",
+  imageAlt = "Hero Image",
+  publishedDate = defaultDate,
+  srcImage,
+  title = "Content Starter Template",
+  twitterHandle = "@jermspeaks",
+} = Astro.props;
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<!-- <link rel="icon" href="/favicon.ico" sizes="48x48" > -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<meta name="robots" content="noindex" />
+<title>{title}</title>
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="author" content={author} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+{
+  srcImage ? (
+    <meta property="og:image" content={srcImage} />
+  ) : (
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+  )
+}
+<meta property="og:image:alt" content={imageAlt} />
+
+<!-- Articles -->
+<meta
+  property="article:published_time"
+  content={new Date(publishedDate).toISOString()}
+/>
+<meta property="article:author" content={author} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:site" content={twitterHandle} />
+
+<!-- Tracking Scripts (use partytown for loading) -->
