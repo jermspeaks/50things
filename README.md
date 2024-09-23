@@ -1,16 +1,23 @@
-# Astro Content Template
+# Make 50 Things
 
-To get quickly started, use this command:
+![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=50things)
 
-```sh
-npm create astro@latest -- --template jermspeaks/astro-content-template
-```
+The inspiration behind this website is a talk from blinry that went over his blog
+post, [Fifty Things you can do with a Software Defined Radio 📻](https://blinry.org/50-things-with-sdr/).
+He was inspired by [Vi Hart's Fifty Fizzbuzzes](https://github.com/vihart/fiftyfizzbuzzes/blob/master/Fifty%20Fizzbuzzes.ipynb).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/jermspeaks/astro-content-template/tree/main)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/jermspeaks/astro-content-template/tree/main)
-<!-- [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json) -->
+Simon Willison wrote a blog post earlier this year that helps frame this website.
+[Give people something to link to so they can talk about your features and ideas](https://simonwillison.net/2024/Jul/13/give-people-something-to-link-to/). I couldn't agree more.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This is my first attempt at making a one-off website.
+
+[Temporary Website Link](https://50things-nine.vercel.app/).
+
+## Inspirations
+
+- [The Lindy Library](https://www.thelindylibrary.org/)
+- [Choose Boring Technology](https://boringtechnology.club/)
+- [The Twelve-Factor App](https://12factor.net/)
 
 ## 🚀 Project Structure
 
@@ -52,9 +59,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Todo
+## Deployment
 
-- [x] Add `shadcn/ui` components
-- [ ] Update Github configuration for no `main` branch pushes
-- [ ] Add the `devcontainer.json` config for GitHub Codespaces
-- [ ] Get content collections started using markdown notes
+We've chosen to deploy to Vercel.
+
+Here's our badge: ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=50things) (same as the top).
