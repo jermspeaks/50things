@@ -18,14 +18,18 @@ The developer who has gone through 50 iterations knows the technology a lot
 better than the one who only built one project.
 
 > The ceramics teacher announced on opening day that he was dividing the class into two groups. All those on the left side of the studio, he said, would be graded solely on the quantity of work they produced, all those on the right solely on its quality. His procedure was simple: on the final day of class he would bring in his bathroom scales and weigh the work of the "quantity" group: fifty pound of pots rated an "A", forty pounds a "B", and so on. Those being graded on "quality", however, needed to produce only one pot - albeit a perfect one - to get an "A".
-> Well, came grading time and a curious fact emerged: the works of highest quality were all produced by the group being graded for quantity. It seems that while the "quantity" group was busily churning out piles of work - and learning from their mistakes - the "quality" group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.  
+> 
+> Well, came grading time and a curious fact emerged: **the works of highest quality were all produced by the group being graded for quantity**. It seems that while the "quantity" group was busily churning out piles of work - and learning from their mistakes - the "quality" group had sat theorizing about perfection, and in the end had little more to show for their efforts than grandiose theories and a pile of dead clay.
+> 
 > -- David Bayles & Ted Orland, Art & Fear: Observations On the Perils (and Rewards) of Artmaking
 
 ## Rules
 
-**You should be able to make these 50 things in a short amount of time.**
+- **You should be able to make these 50 things in a short amount of time.**
 Try not to extend this over a long period of time.
 You want to be able to iterate quickly.
+- **It doesn't have to be 50.** 50 appears to be a high enough number to make some creative solutions.
+However, if you want to stop at 10, 25, or 40, that's also acceptable.
 
 ## Start Now
 
